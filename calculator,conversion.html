@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function add(){
+            var a= parseInt(document.getElementById("num1").value);
+            var b= parseInt(document.getElementById("num2").value);
+            var c= a+b;
+            console.log('result:'+c)
+            document.getElementById("RESULT").innerText="result is:"+c;
+        }
+        function sub(){
+            var a= parseInt(document.getElementById("num1").value);
+            var b= parseInt(document.getElementById("num2").value);
+            var c= a-b;
+            console.log('result:'+c)
+            document.getElementById("RESULT").innerText="result is:"+c;
+        }
+        function mul(){
+            var a= parseInt(document.getElementById("num1").value);
+            var b= parseInt(document.getElementById("num2").value);
+            var c= a*b;
+            console.log('result:'+c)
+            document.getElementById("RESULT").innerText="result is:"+c;
+        }
+        function div(){
+            var a= parseInt(document.getElementById("num1").value);
+            var b= parseInt(document.getElementById("num2").value);
+            var c= a/b;
+            console.log('result:'+c)
+            document.getElementById("RESULT").innerText="result is:"+c;
+        }
+        function km_m(){
+            var a= parseInt(document.getElementById("n1").value);
+            var c=a*(0.621)
+            console.log('result:'+c)
+            document.getElementById("result").innerText="GIVEN KILOMETER TO MILES IS:"+c;
+
+        }
+        function kg_p(){
+            var a= parseInt(document.getElementById("n1").value);
+            var c=a*(2.205)
+            console.log('result:'+c)
+            document.getElementById("result").innerText="GIVEN KILOGRAM TO POUNDS IS:"+c;
+
+        }
+        function m_cm(){
+            var a= parseInt(document.getElementById("n1").value);
+            var c=a*(100)
+            console.log('result:'+c)
+            document.getElementById("result").innerText="GIVEN METER INTO CENTIMETER IS:"+c;
+        }
+        
+    </script>
+    <h1>CALCULATOR</h1>
+<form>
+    <input id="num1" type="number" placeholder="enter a value"/>
+    <input id= type="number" placeholder="enter a value"/>
+    <input type="button" value="ADD" onclick="add()"/>
+    <input type="button" value="SUB" onclick="sub()"/>
+    <input type="button" value="MUL" onclick="mul()"/>
+    <input type="button" value="DIV" onclick="div()"/>
+    <h2 id="RESULT">RESULT:</h2>
+</form>
+    <h1>CONVERIONS</h1>
+<form>
+    <input id="n1" type="number" placeholder="enter a value"/>       
+    <input type="button" value="convert" onclick="km_m()"/>
+    <input type="button" value="convert" onclick="kg_p()"/>
+    <input type="button" value="convert" onclick="m_cm()"/>
+    <h2 id="result">click:</h2>
+</form>
+
+</body>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
